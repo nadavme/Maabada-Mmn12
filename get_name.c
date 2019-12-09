@@ -22,5 +22,10 @@ char get_name()
  */
 int main() {
     printf("Hello, World!\n");
+    int i;
+    for (i = 0; i < 10; i++)
+    {
+        printf("%s", get_name());
+    }
     return 0;
 }
