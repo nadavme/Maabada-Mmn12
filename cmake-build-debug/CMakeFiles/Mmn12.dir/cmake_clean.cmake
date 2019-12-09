@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/Mmn12.dir/main.c.o"
+  "CMakeFiles/Mmn12.dir/get_name.c.o"
   "Mmn12.pdb"
   "Mmn12"
 )

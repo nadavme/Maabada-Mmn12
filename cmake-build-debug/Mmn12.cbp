@@ -76,7 +76,7 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/cs/usr/nadav.meidan/Downloads/TheOpenUniversity/Mmn12/main.c">
+		<Unit filename="/cs/usr/nadav.meidan/Downloads/TheOpenUniversity/Mmn12/get_name.c">
 			<Option target="Mmn12"/>
 		</Unit>
 		<Unit filename="/cs/usr/nadav.meidan/Downloads/TheOpenUniversity/Mmn12/CMakeLists.txt">

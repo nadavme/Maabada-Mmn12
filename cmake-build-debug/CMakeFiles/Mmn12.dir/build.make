@@ -57,27 +57,27 @@ include CMakeFiles/Mmn12.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/Mmn12.dir/flags.make
 
-CMakeFiles/Mmn12.dir/main.c.o: CMakeFiles/Mmn12.dir/flags.make
-CMakeFiles/Mmn12.dir/main.c.o: ../main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cs/usr/nadav.meidan/Downloads/TheOpenUniversity/Mmn12/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/Mmn12.dir/main.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Mmn12.dir/main.c.o   -c /cs/usr/nadav.meidan/Downloads/TheOpenUniversity/Mmn12/main.c
+CMakeFiles/Mmn12.dir/get_name.c.o: CMakeFiles/Mmn12.dir/flags.make
+CMakeFiles/Mmn12.dir/get_name.c.o: ../get_name.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cs/usr/nadav.meidan/Downloads/TheOpenUniversity/Mmn12/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/Mmn12.dir/get_name.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Mmn12.dir/get_name.c.o   -c /cs/usr/nadav.meidan/Downloads/TheOpenUniversity/Mmn12/get_name.c
 
-CMakeFiles/Mmn12.dir/main.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Mmn12.dir/main.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /cs/usr/nadav.meidan/Downloads/TheOpenUniversity/Mmn12/main.c > CMakeFiles/Mmn12.dir/main.c.i
+CMakeFiles/Mmn12.dir/get_name.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Mmn12.dir/get_name.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /cs/usr/nadav.meidan/Downloads/TheOpenUniversity/Mmn12/get_name.c > CMakeFiles/Mmn12.dir/get_name.c.i
 
-CMakeFiles/Mmn12.dir/main.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Mmn12.dir/main.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /cs/usr/nadav.meidan/Downloads/TheOpenUniversity/Mmn12/main.c -o CMakeFiles/Mmn12.dir/main.c.s
+CMakeFiles/Mmn12.dir/get_name.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Mmn12.dir/get_name.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /cs/usr/nadav.meidan/Downloads/TheOpenUniversity/Mmn12/get_name.c -o CMakeFiles/Mmn12.dir/get_name.c.s
 
 # Object files for target Mmn12
 Mmn12_OBJECTS = \
-"CMakeFiles/Mmn12.dir/main.c.o"
+"CMakeFiles/Mmn12.dir/get_name.c.o"
 
 # External object files for target Mmn12
 Mmn12_EXTERNAL_OBJECTS =
 
-Mmn12: CMakeFiles/Mmn12.dir/main.c.o
+Mmn12: CMakeFiles/Mmn12.dir/get_name.c.o
 Mmn12: CMakeFiles/Mmn12.dir/build.make
 Mmn12: CMakeFiles/Mmn12.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/cs/usr/nadav.meidan/Downloads/TheOpenUniversity/Mmn12/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable Mmn12"

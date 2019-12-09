@@ -123,32 +123,32 @@ Mmn12/fast:
 	$(MAKE) -f CMakeFiles/Mmn12.dir/build.make CMakeFiles/Mmn12.dir/build
 .PHONY : Mmn12/fast
 
-main.o: main.c.o
+get_name.o: get_name.c.o
 
-.PHONY : main.o
+.PHONY : get_name.o
 
 # target to build an object file
-main.c.o:
-	$(MAKE) -f CMakeFiles/Mmn12.dir/build.make CMakeFiles/Mmn12.dir/main.c.o
-.PHONY : main.c.o
+get_name.c.o:
+	$(MAKE) -f CMakeFiles/Mmn12.dir/build.make CMakeFiles/Mmn12.dir/get_name.c.o
+.PHONY : get_name.c.o
 
-main.i: main.c.i
+get_name.i: get_name.c.i
 
-.PHONY : main.i
+.PHONY : get_name.i
 
 # target to preprocess a source file
-main.c.i:
-	$(MAKE) -f CMakeFiles/Mmn12.dir/build.make CMakeFiles/Mmn12.dir/main.c.i
-.PHONY : main.c.i
+get_name.c.i:
+	$(MAKE) -f CMakeFiles/Mmn12.dir/build.make CMakeFiles/Mmn12.dir/get_name.c.i
+.PHONY : get_name.c.i
 
-main.s: main.c.s
+get_name.s: get_name.c.s
 
-.PHONY : main.s
+.PHONY : get_name.s
 
 # target to generate assembly for a file
-main.c.s:
-	$(MAKE) -f CMakeFiles/Mmn12.dir/build.make CMakeFiles/Mmn12.dir/main.c.s
-.PHONY : main.c.s
+get_name.c.s:
+	$(MAKE) -f CMakeFiles/Mmn12.dir/build.make CMakeFiles/Mmn12.dir/get_name.c.s
+.PHONY : get_name.c.s
 
 # Help Target
 help:
@@ -159,9 +159,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... Mmn12"
 	@echo "... edit_cache"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... get_name.o"
+	@echo "... get_name.i"
+	@echo "... get_name.s"
 .PHONY : help
 
 
