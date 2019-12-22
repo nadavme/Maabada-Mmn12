@@ -3,9 +3,6 @@
 
 
 
-
-
-
 /*!
  *See header file.
  * @return
@@ -44,31 +41,23 @@ bool contains(char str[], int i)
 int main() {
     char str[20];
     int i, k;
-    const char* TheChosenName;
+    char* TheChosenName;
     printf("Please enter 30 names: ");
     for (i = 0; i < 30; i++)
     {
         scanf("%s", str);
+        printf("%s ", str);
         /*ensure 'str' doesn't holds '\n' or ' '*/
         if(str[strlen(str)-1] == '\n' || str[strlen(str)-1] == ' ') str[strlen(str)-1] = NULL_TERMINATED_STRING;
         if (contains(str, i))
         {
-            printf("\nThe names that were accepted correctly are:\n\n");
-            for (k = 0; k < i; k++)
-            {
-                printf("%s ", NAMES_LIST[k]);
-            }
-            printf("\n\nOne of the names were entered twice. The program will shut down now\n");
+
+            printf("\n\nOne of the names was entered twice. The program will shut down now\n");
             exit(11);
         }
         else strcpy(NAMES_LIST[i], str);
     }
-    printf("\nThe names that were accepted correctly are:\n");
-    for (i = 0; i < 30; i++)
-    {
-        printf("%s ", NAMES_LIST[i]);
-    }
-    printf("\n The names that were chosen randomly are:\n");
+    printf("\n\n The names that were chosen randomly are:\n");
     srand(time(NULL));
     for (i = 0; i < 10; i++)
     {
