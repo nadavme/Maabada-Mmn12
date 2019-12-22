@@ -39,4 +39,4 @@ bool contains(char str[], int i);
 
 
 
-#endif //MMN12_GET_NAME_H
+#endif /*MMN12_GET_NAME_H*/
