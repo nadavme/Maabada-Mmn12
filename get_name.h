@@ -18,7 +18,7 @@ char NAMES_LIST[30][20];
  *
  * @return
  */
-char get_name();
+char* get_name();
 
 /*!
  *

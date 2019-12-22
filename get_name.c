@@ -10,11 +10,10 @@
  *See header file.
  * @return
  */
-char get_name()
+char*  get_name()
 {
-    srand(time(NULL));
     int TheChosen = rand()%30;
-    return (char) NAMES_LIST[TheChosen];
+    return  NAMES_LIST[TheChosen];
 }
 
 /*!
@@ -26,7 +25,7 @@ char get_name()
 bool contains(char str[], int i)
 {
     int j, k;
-    for (k = 0; k < strlen(str); k++)
+    for (k = 0; k < (int) strlen(str); k++)
     {
         str[k] = tolower(str[k]);
     }
@@ -45,6 +44,7 @@ bool contains(char str[], int i)
 int main() {
     char str[20];
     int i, k;
+    const char* TheChosenName;
     printf("Please enter 30 names: ");
     for (i = 0; i < 30; i++)
     {
@@ -53,46 +53,27 @@ int main() {
         if(str[strlen(str)-1] == '\n' || str[strlen(str)-1] == ' ') str[strlen(str)-1] = NULL_TERMINATED_STRING;
         if (contains(str, i))
         {
-            printf("\nThe names that was accepted correctly are:\n");
+            printf("\nThe names that were accepted correctly are:\n\n");
             for (k = 0; k < i; k++)
             {
-                printf(" %s,", NAMES_LIST[k]);
+                printf("%s ", NAMES_LIST[k]);
             }
-            printf("po habaaia1");
-            printf("\nOne of the names was entered twice. The program will shut down now");
+            printf("\n\nOne of the names were entered twice. The program will shut down now\n");
             exit(11);
         }
         else strcpy(NAMES_LIST[i], str);
     }
-    printf("\nThe names that was accepted correctly are:\n");
+    printf("\nThe names that were accepted correctly are:\n");
     for (i = 0; i < 30; i++)
     {
-        printf(" %s,", NAMES_LIST[i]);
+        printf("%s ", NAMES_LIST[i]);
     }
-    printf("po habaaia2");
-
-//
-//    /*Checks if the name was already accepted as an input, before adding it to the list*/
-//    while(k < 30)
-//    {
-//        for (i=0; i < k; i++)
-//        {
-//            if (contains(str, i))
-//            {
-//                printf("\nOne of the names was entered twice. The program will shut down now");
-//                exit(11);
-//            }
-//        }
-//        strcpy(NAMES_LIST[i], str);
-//        printf("%c", get_name());
-//        k++;
-//    }
-//    printf("\nThe names that was accepted correctly are:\n");
-//    for (i = 0; i < 30; i++)
-//    {
-//        printf(" %s,", NAMES_LIST[i]);
-//    }
-
-
+    printf("\n The names that were chosen randomly are:\n");
+    srand(time(NULL));
+    for (i = 0; i < 10; i++)
+    {
+        TheChosenName = get_name();
+        printf("\n%s ", TheChosenName);
+    }
     return 0;
 }
