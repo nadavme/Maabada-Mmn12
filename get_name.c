@@ -13,7 +13,8 @@
 char get_name()
 {
     srand(time(NULL));
-    return NAMES_LIST[rand() % 30];
+    int TheChosen = rand()%30;
+    return (char) NAMES_LIST[TheChosen];
 }
 
 /*!
@@ -27,7 +28,7 @@ bool contains(char str[], int i)
     int j;
     for (j = 0; j < i; j++)
     {
-        if(NAMES_LIST[j] == str) return true;
+        if(strcmp(NAMES_LIST[j], tolower(str)) == 0) return true;
     }
     return false;
 }
@@ -39,32 +40,55 @@ bool contains(char str[], int i)
  */
 int main() {
     char str[20];
-    unsigned long j;
     int i, k= 0;
     printf("Please enter 30 names: ");
-    fgets(str, 300, stdin);
-    printf("\nThe names that was accepted correctly are:\n%s", str);
-    /*ensure 'str' doesn't holds '\n' or ' '*/
-    if(str[strlen(str)-1] == '\n' || str[strlen(str)-1] == ' ') str[strlen(str)-1] = NULL_TERMINATED_STRING;
-    for(j = 0; j <  strlen(str); j++)
+    for (i = 0; i < 30; i++)
     {
-        str[j] = tolower(str[j]);
-    }
-    /*Checks if the name was already accepted as an input, before adding it to the list*/
-    while(k < 30)
-    {
-        for (i=0; i < k; i++)
+        scanf("%s", str);
+        printf("po habaaia3");
+        /*ensure 'str' doesn't holds '\n' or ' '*/
+        if(str[strlen(str)-1] == '\n' || str[strlen(str)-1] == ' ') str[strlen(str)-1] = NULL_TERMINATED_STRING;
+        if (contains(str, i))
         {
-            if (contains(str, i))
+            printf("\nThe names that was accepted correctly are:\n");
+            for (k = 0; k < i; k++)
             {
-                printf("\nOne of the names was entered twice. The program will shut down now");
-                exit(11);
+                printf(" %s,", NAMES_LIST[k]);
             }
+            printf("po habaaia1");
+            printf("\nOne of the names was entered twice. The program will shut down now");
+            exit(11);
         }
-        NAMES_LIST[i] = (char) str;
-        printf("%c", get_name());
-        k++;
+        else strcpy(NAMES_LIST[i], str);
     }
+    printf("\nThe names that was accepted correctly are:\n");
+    for (i = 0; i < 30; i++)
+    {
+        printf(" %s,", NAMES_LIST[i]);
+    }
+    printf("po habaaia2");
+
+//
+//    /*Checks if the name was already accepted as an input, before adding it to the list*/
+//    while(k < 30)
+//    {
+//        for (i=0; i < k; i++)
+//        {
+//            if (contains(str, i))
+//            {
+//                printf("\nOne of the names was entered twice. The program will shut down now");
+//                exit(11);
+//            }
+//        }
+//        strcpy(NAMES_LIST[i], str);
+//        printf("%c", get_name());
+//        k++;
+//    }
+//    printf("\nThe names that was accepted correctly are:\n");
+//    for (i = 0; i < 30; i++)
+//    {
+//        printf(" %s,", NAMES_LIST[i]);
+//    }
 
 
     return 0;

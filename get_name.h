@@ -10,7 +10,7 @@
 #include <time.h>
 
 #define NULL_TERMINATED_STRING '\0'
-char NAMES_LIST[30];
+char NAMES_LIST[30][20];
 
 
 
