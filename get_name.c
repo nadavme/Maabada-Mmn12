@@ -25,10 +25,14 @@ char get_name()
  */
 bool contains(char str[], int i)
 {
-    int j;
+    int j, k;
+    for (k = 0; k < strlen(str); k++)
+    {
+        str[k] = tolower(str[k]);
+    }
     for (j = 0; j < i; j++)
     {
-        if(strcmp(NAMES_LIST[j], tolower(str)) == 0) return true;
+        if(strcmp(NAMES_LIST[j], str) == 0) return true;
     }
     return false;
 }
@@ -40,12 +44,11 @@ bool contains(char str[], int i)
  */
 int main() {
     char str[20];
-    int i, k= 0;
+    int i, k;
     printf("Please enter 30 names: ");
     for (i = 0; i < 30; i++)
     {
         scanf("%s", str);
-        printf("po habaaia3");
         /*ensure 'str' doesn't holds '\n' or ' '*/
         if(str[strlen(str)-1] == '\n' || str[strlen(str)-1] == ' ') str[strlen(str)-1] = NULL_TERMINATED_STRING;
         if (contains(str, i))
