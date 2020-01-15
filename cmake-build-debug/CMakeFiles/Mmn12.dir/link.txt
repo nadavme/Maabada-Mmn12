@@ -1,1 +1,0 @@
-/usr/bin/cc -g   CMakeFiles/Mmn12.dir/get_name.c.o  -o Mmn12 

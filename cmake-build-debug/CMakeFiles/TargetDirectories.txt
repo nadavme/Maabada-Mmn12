@@ -1,3 +1,0 @@
-/cs/usr/nadav.meidan/Downloads/TheOpenUniversity/Mmn12/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/cs/usr/nadav.meidan/Downloads/TheOpenUniversity/Mmn12/cmake-build-debug/CMakeFiles/Mmn12.dir
-/cs/usr/nadav.meidan/Downloads/TheOpenUniversity/Mmn12/cmake-build-debug/CMakeFiles/edit_cache.dir
